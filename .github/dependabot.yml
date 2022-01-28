@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/idonotexist"
+    schedule:
+      interval: daily
+      time: "11:00"
+  - package-ecosystem: npm
+    directory: "/api"
+    schedule:
+      interval: daily
+      time: "11:00"
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: molly
+      time: "11:00"
+  - package-ecosystem: "github-actions"
+    directory: "/api"
+    schedule:
+      interval: "daily"
+      time: "11:00"
