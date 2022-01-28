@@ -13,7 +13,7 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: molly
+      interval: daily
       time: "11:00"
   - package-ecosystem: "github-actions"
     directory: "/api"
