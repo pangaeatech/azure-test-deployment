@@ -4,6 +4,6 @@
     <PackageReference Include="Newtonsoft.Json">
         <Version>9.0.1-beta1<Version>
     </PackageReference>
-     <PackageReference Include="EntityFramework" Version="6.4.1" />
+     <PackageReference Include="EntityFramework" Version="6.1.1" />
   </ItemGroup>
 </Project>
