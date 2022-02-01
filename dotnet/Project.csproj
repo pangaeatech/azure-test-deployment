@@ -3,7 +3,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <PackageReference Include="Newtonsoft.Json">
-        <Version>9.0.1-beta1<Version>
+        <Version>13.0.1<Version>
     </PackageReference>
      <PackageReference Include="EntityFramework" Version="6.1.1" />
   </ItemGroup>
