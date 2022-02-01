@@ -14,7 +14,7 @@ updates:
       interval: daily
       time: "11:00"
   - package-ecosystem: "github-actions"
-    directory: "/api"
+    directory: "/"
     schedule:
       interval: "daily"
       time: "11:00"
