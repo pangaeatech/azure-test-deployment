@@ -11,7 +11,8 @@ jobs:
       - name: Dependabot metadata
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v1.3.0
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Approve a PR
         run: |
           if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" == "REVIEW_REQUIRED" ]; 
