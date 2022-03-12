@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Approve a PR
         run: |
-          if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" == "REVIEW_REQUIRED" ]; 
+          if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" != "APPROVED" ]; 
           then gh pr review --approve "$PR_URL"
           else echo "PR already approved, skipping additional approvals to minimize emails/notification noise.";
           fi
