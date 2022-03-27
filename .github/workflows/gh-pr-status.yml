@@ -6,8 +6,8 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - run: |
+          gh pr checkout $PR_URL
           BODY=$(gh pr status --json title)
           gh pr comment "$PR_URL" -b $BODY
         env:
