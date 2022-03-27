@@ -6,9 +6,6 @@ jobs:
   dependabot:
     runs-on: ubuntu-latest
     steps:
-      - name: Dependabot metadata
-        id: dependabot-metadata
-        uses: dependabot/fetch-metadata@v1.3.0
       - name: Approve a PR
         run: |
           gh pr checkout "$PR_URL"
