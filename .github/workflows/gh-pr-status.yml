@@ -10,7 +10,7 @@ jobs:
       - run: |
           gh pr checkout $PR_URL
           BODY=$(gh pr status --json title)
-          gh pr comment "$PR_URL" -b $BODY
+          gh pr comment "$PR_URL" -b "$BODY"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
