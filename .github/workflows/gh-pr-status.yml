@@ -1,0 +1,18 @@
+name: Get results of `gh pr status`
+on: pull_request
+permissions:
+  pull-requests: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          gh pr checkout $PR_URL
+          BODY=$(gh pr status --json title)
+          gh pr comment "$PR_URL" -b "$BODY"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
