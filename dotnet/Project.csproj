@@ -3,7 +3,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <PackageReference Include="Castle.Core">
-        <Version>4.4.0<Version>
+        <Version>5.1.1<Version>
     </PackageReference>
      <PackageReference Include="Nancy" Version="1.4.4" />
   </ItemGroup>
